@@ -3,7 +3,8 @@ body{
 	background-attachment: fixed;
 	font-family: Helvetica Neue,Helvetica,Arial,sans-serif; 
 	overflow-x:hidden;
-	margin:0px;
+	margin-top:90px;
+	padding-bottom: 0px;
 }
 
 
@@ -15,17 +16,28 @@ header{
 	text-align: center;
 	height: 28px;
 	overflow: auto;
-
+	position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow-y:hidden
 }
 
 footer{
 	width: 100%;
-	padding: 20px;
+	padding: 5px;
 	background: #ffffff;
 	color: black;
 	text-align: center;
-	height: 28px;
+	height: 15px;
+	clear: both;
 	overflow: auto;
+    overflow-y:hidden;
+    margin-top: 50px;
+    margin-left: -8px;
+    margin-right: -8px;
+    position: fixed;
+    bottom: 0px;
 }
 
 h1,h2,h3{
@@ -33,6 +45,11 @@ h1,h2,h3{
 	margin: 0px;
 	height: 28px;
 }
+
+h2{
+	margin: 20px;
+}
+
 
 a{
 	color: #cccccc ;
@@ -42,6 +59,12 @@ a{
 	padding: 10px;
 }
 
+.hrrule{
+	border : 0;
+  	height: 1px; 
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 #name{
 	width:70.0%;
 	float: left;
@@ -49,6 +72,7 @@ a{
 
 #pagelinks{
 	width:20%;
+	color: #E0E0E0;
 	text-align: right;
 	float: left;
 }
@@ -57,7 +81,7 @@ a{
 	margin: 20px;
 }
 
-#aboutme{
+#aboutme,#portfolio,#contactme{
 	background: #ffffff;
 	padding: 20px;
 	margin: 20px;
@@ -71,9 +95,23 @@ a{
 	margin: 20px;
 }
 
-#aboutmetext{
+#aboutme,#contactmetext,#portfolio{
 	margin: 20px;
 	width: 650px;
+}
+
+#portfoliotext{
+	margin: 20px;
+	width: 650px;
+}
+
+.project{
+	margin:20px;
+}
+
+#messagefield {
+    width: 600px;
+    height: 200px;
 }
 
 #externallinks{
@@ -87,4 +125,16 @@ a{
 
 #footertext{
 	text-align: center;
+	margin: 0 auto;
+	font-size: small;
+	clear:both;
+	bottom: 0;
+	padding: 0;
+}
+
+#sendmessage{
+	padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+	margin-top: 18px;
 }
